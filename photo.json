@@ -1,0 +1,26 @@
+[
+    {
+        "photoId": "101",
+        "userEmail": "johndoe@example.com",
+        "imageUrl": "https://example.com/photo1.jpg",
+        "rating": null,
+        "captureDate": null,
+        "description": "A beautiful sunset over the ocean"
+    },
+    {
+        "photoId": "102",
+        "userEmail": "janesmith@example.com",
+        "imageUrl": "https://example.com/photo2.jpg",
+        "rating": 4,
+        "captureDate": "2024-08-10",
+        "description": "Serene mountain view"
+    },
+    {
+        "photoId": "103",
+        "userEmail": "alexwong@example.com",
+        "imageUrl": "https://example.com/photo3.jpg",
+        "rating": 5,
+        "captureDate": "2024-07-20",
+        "description": "City skyline at night"
+    }
+]

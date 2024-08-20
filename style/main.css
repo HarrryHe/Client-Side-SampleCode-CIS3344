@@ -1,0 +1,127 @@
+html, body {   
+    margin:0rem; 
+    padding:0rem; 
+}
+
+/* mobile first design -- everything down to the media query is for mobile */
+body {
+    background: linear-gradient(to right, #7c6f92, #65759e);
+    color: #DCDCDC;
+    font-family: sans-serif;
+}
+
+#titleNav {
+    position: fixed;
+    top: 0rem;
+    left: 0rem;
+    z-index: 1;
+    width: 100%;
+    letter-spacing: 0.1rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding:0.5rem;
+    flex-direction: column;
+    text-align: center;
+    /* spaces out letters a bit */
+    letter-spacing: 0.1rem;
+    align-items: center;
+}
+
+#title {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 0.2rem; /* spaces out letters a bit */
+    white-space: nowrap;  /* don't allow the title to wrap */
+    font-style: italic;
+}
+
+#nav {
+    font-size: 1rem;
+    font-weight: bold;
+    padding-top: 0.5rem;
+    white-space: nowrap;  /* don't allow nav links to wrap */
+    text-align: center;
+}
+
+#nav a {  
+    text-decoration:none;  
+    color: #C8C8C8;
+}
+
+#nav a:hover {
+    color: blueviolet;
+}
+
+#content {
+    padding: 1rem;
+    font-size: 1.2rem;
+    line-height: 2rem; 
+
+    /* for mobile the titleNav is taller, needs more top padding */
+    margin-top: 7rem;  
+
+    /* dont allow footer to cover up bottom of content */
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+/*.hero {
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    line-height: 4.5rem;
+    font-weight: bold;
+    text-align:center;
+}*/
+
+#content #home img { 
+    width: 40%;
+    border-radius: 0.5rem;
+    box-shadow: 0.4rem 0.4rem 0.4rem rgba(0,0,0,0.6);
+    height: auto;
+}
+
+#content #home a {
+    text-decoration: none;
+    color: violet;
+    font-weight: bold;
+}
+
+#content #home a:hover {
+    color: blue;
+}
+
+#footer {
+
+    position: fixed;
+    bottom: 0rem;
+    left: 0rem; 
+    z-index: 1;
+    background-color: #2C3E50;
+    color: white; 
+    width:100%;
+    text-align:center;
+    padding:0.5rem;
+}
+    
+#titleNav, #footer {
+        /* give a little "3D"  effect to the edges of titleNav and footer */
+    box-shadow: 0rem 0rem 1rem rgba(0,0,0);  
+}
+
+/* desktop only */
+@media only screen and (min-width: 40rem) { /* this size is tailored to size of "web site title" */
+    #titleNav {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    #pageTitle {
+        text-align: left;
+    }
+
+    #nav {
+        text-align: right;
+    }
+}

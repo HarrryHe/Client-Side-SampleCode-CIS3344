@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- this is your internal style sheet -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Photoly</title>
+</head>
+<body>
+    <div id="titleNav">
+
+        <div id="pageTitle">
+            Photoly
+        </div>
+
+        <div id="nav">
+            <a href="myIndex.html">Home</a>
+            &nbsp; <!-- non breaking space used to give more space -->
+            | <!-- vertical bar used as separator -->
+            &nbsp;
+            <a href="blog.html">Blog</a>
+            &nbsp; <!-- non breaking space used to give more space -->
+            &nbsp;
+        </div>
+    </div>
+
+    <div id="content">
+        <h1><span class="type"></span></h1>
+
+        <p>
+            This is the website where you can view and share your favorite photography. Upload your best shots and explore the creative work of others. Join our community and showcase your talent!
+        </p>
+
+        <p>Visit my <a href="https://harrryhe.github.io/harry.github.io/" target="_blank">portfolio website</a> for more content!</p>
+
+        <p>
+            <img src="../pic/mountain.png">
+        </p>
+
+        <br>
+        <br>
+        <div id="database">
+            <p>
+                Our website features a carefully curated collection of photography that captures a wide range of scenes, from beautiful ocean sunsets to serene mountain landscapes and dynamic city skylines. Each photo in our database includes several key pieces of information:
+                <br>
+                <ul>
+                    <li><strong>Photo ID (String)</strong>: A unique identifier for each photo.</li>
+                    <li><strong>User Email (String)</strong>: The email of the user who uploaded the photo.</li>
+                    <li><strong>Image URL (String)</strong>: A link to the location of the photo.</li>
+                    <li><strong>Rating (Integer, Nullable)</strong>: A user-given rating for the photo, which may be null if not rated.</li>
+                    <li><strong>Capture Date (Date, Nullable)</strong>: The date when the photo was taken, which may also be null.</li>
+                    <li><strong>Description (String)</strong>: A brief description of the photo’s content.</li>
+                </ul>
+                Click <a target="_blank" href="photo.json">here</a> to see my json data.
+            </p>
+        </div>
+        <br>
+
+        <div id="blog">
+            <h2>My Web Development Experience</h2>
+            <p>
+                Throughout my web development journey, I have gained experience in HTML, CSS, and JavaScript. I have built several websites, each one improving my understanding of web technologies. This project, in particular, has helped me solidify my knowledge of responsive design and JSON integration.
+            </p>
+
+            <h2>HW01 Homepage</h2>
+            <p>
+                In this homework, I found creating the layout to be straightforward, as I am comfortable with HTML and CSS. However, working with JSON data was a new challenge for me. Understanding how to structure the data and link it effectively with the website took some time. Despite the initial difficulties, I found the process of integrating dynamic data with the website to be very valuable and rewarding.
+            </p>
+        </div>
+    </div> <!-- content. [[Keep track of nesting]] -->
+
+    <div id="footer">
+        Harry He
+    </div>
+</body>
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed('.type' , {
+        strings: ['Welcome!'],
+        typeSpeed: 100,
+        loop: true,
+        backSpeed: 150
+    })
+</script>
+</html>

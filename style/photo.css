@@ -1,0 +1,93 @@
+/* 样式化 photo 组件的主容器 */
+.photo {
+    border: 0.1rem solid #ccc;
+    padding: 1rem;
+    margin: 2% auto;  /* 居中主容器 */
+    background-color: #f9f9f9;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    max-width: 60%;  /* 使用百分比来设置宽度 */
+    text-align: center;
+}
+
+.photo:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+/* 样式化图片容器 */
+.photo .imageContainer {
+    width: 100%;  /* 容器宽度设置为父容器宽度的80%，确保它可以响应视窗宽度 */
+    height: 0;
+    padding-bottom: 80%;  /* 通过padding-bottom创建一个正方形的比例容器 */
+    position: relative;  /* 相对定位容器，使图片可以绝对定位 */
+    margin-bottom: 1rem;  /* 添加外边距，使图片与其他元素保持距离并居中 */
+}
+
+.photo .imageContainer img {
+    position: absolute;  /* 绝对定位图片，使其填充整个容器 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* 确保图片填充容器并保持比例 */
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* 添加阴影，使图片更具层次感 */
+}
+
+/* 样式化选择图像的下拉菜单 */
+.photo .selectImage {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 0.1rem solid #ccc;
+    border-radius: 0.25rem;
+    background-color: #fff;
+}
+
+/* 样式化照片信息的显示区域 */
+.photo .photoInfo {
+    margin-bottom: 1rem;
+    text-align: left;
+    color: darkgray;
+}
+
+.photo .photoInfo h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.photo .photoInfo p {
+    margin: 0.25rem 0;
+}
+
+
+.photo .DescriptionButton,
+.photo .captureDateButton,
+.photo .rateButton {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.photo .DescriptionButton:hover,
+.photo .captureDateButton:hover,
+.photo .rateButton:hover {
+    background-color: #0056b3;
+}
+
+.photo .newDescriptionInput,
+.photo .newCaptureDateInput,
+.photo .rateInput {
+    width: 90%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    border: 0.1rem solid #ccc;
+    border-radius: 0.25rem;
+}
