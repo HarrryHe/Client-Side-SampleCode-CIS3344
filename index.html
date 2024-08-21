@@ -46,10 +46,12 @@
 
     <!-- React reusable (these are called by CGFs). -->
     <script type="text/babel" src="_React_reusable/ConvertEle.js"></script>
+    <script type="text/babel" src="_React_reusable/MakePhotoR.js"></script>
 
     <!-- React Content Generating functions (these are called by the router) -->
     <script type="text/babel" src="_React_CGF/Blog.js"></script>
     <script type="text/babel" src="_React_CGF/Home.js"></script>
+    <script type="text/babel" src="_React_CGF/MakePhotoR_CGF.js"></script>
 
     <!-- Any React scripts (which typically have JSX) needs script type="text/babel" -->
 
@@ -89,13 +91,20 @@
                         </div>
 
                         <div class="dropDown">
-                            <div class="dropHeader">Search</div>
+                            <div class="dropHeader">Search JS</div>
                             <div class="dropContent">
                                 <Link to="/cars">Cars</Link> <br />
                                 <Link to="/myObj">My Objects</Link> <br />
                                 <Link to="/myPhoto">My Photos</Link> <br />
                                 <a target="_blank" href="docs/DB_proposal.pdf">My DB PDF</a>
                             </div>  
+                        </div>
+
+                        <div class="dropDown">
+                            <div class="dropHeader">Search React</div>
+                            <div class="dropContent">
+                                <Link to="/myPhotoR">My Photos (React)</Link>
+                            </div>
                         </div>
 
                         <div class="dropDown">
@@ -109,7 +118,8 @@
                     <Route path="/home" component={Home} /> 
                     <Route path="/cars" component={() => <ConvertEle ele={CarsComingSoon()} />} />
                     <Route path="/myObj" component={() => <ConvertEle ele={MakeObj_CGF()} />} />
-                        <Route path="/myPhoto" component={() => <ConvertEle ele={MakePhoto_CGF()} />} />
+                    <Route path="/myPhoto" component={() => <ConvertEle ele={MakePhoto_CGF()} />} />
+                    <Route path="/myPhotoR" component={MakePhotoR_CGF} />
                     <Route path="/blog" component={Blog} />
                 </div>
 

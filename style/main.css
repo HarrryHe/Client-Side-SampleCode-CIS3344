@@ -31,7 +31,7 @@ body {
 #title {
     font-size: 2rem;
     font-weight: bold;
-    letter-spacing: 0.2rem; /* spaces out letters a bit */
+    letter-spacing: 0.1rem; /* spaces out letters a bit */
     white-space: nowrap;  /* don't allow the title to wrap */
     font-style: italic;
 }

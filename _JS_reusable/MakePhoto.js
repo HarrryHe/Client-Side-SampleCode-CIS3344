@@ -50,6 +50,7 @@ function MakePhoto ({
             RatingCount++;
         }
         else {
+            alert("Invalid Rating.");
             console.log("Invalid Rating.");
         }
         //update UI
