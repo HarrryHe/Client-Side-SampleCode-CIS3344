@@ -38,20 +38,24 @@
     <script src="_JS_reusable/dropDownFW.js"></script>
     <script src="_JS_reusable/MakeObj.js"></script>
     <script src="_JS_reusable/MakePhoto.js"></script>
+    <script src="_JS_reusable/MakePhotoList.js"></script>
 
     <!-- JS Content Generating functions (these are called by the router). -->
     <script src="_JS_CGF/CarsComingSoon.js"></script>
     <script src="_JS_CGF/MakeObj_CGF.js"></script>
     <script src="_JS_CGF/MakePhoto_CGF.js"></script>
+    <script src="_JS_CGF/MakePhotoList_CGF.js"></script>
 
     <!-- React reusable (these are called by CGFs). -->
     <script type="text/babel" src="_React_reusable/ConvertEle.js"></script>
     <script type="text/babel" src="_React_reusable/MakePhotoR.js"></script>
+    <script type="text/babel" src="_React_reusable/MakePhotoListR.js"></script>
 
     <!-- React Content Generating functions (these are called by the router) -->
     <script type="text/babel" src="_React_CGF/Blog.js"></script>
     <script type="text/babel" src="_React_CGF/Home.js"></script>
     <script type="text/babel" src="_React_CGF/MakePhotoR_CGF.js"></script>
+    <script type="text/babel" src="_React_CGF/MakePhotoListR_CGF.js"></script>
 
     <!-- Any React scripts (which typically have JSX) needs script type="text/babel" -->
 
@@ -96,6 +100,7 @@
                                 <Link to="/cars">Cars</Link> <br />
                                 <Link to="/myObj">My Objects</Link> <br />
                                 <Link to="/myPhoto">My Photos</Link> <br />
+                                <Link to="/myPhotoList">My Photo Lists</Link> <br />
                                 <a target="_blank" href="docs/DB_proposal.pdf">My DB PDF</a>
                             </div>  
                         </div>
@@ -103,7 +108,8 @@
                         <div class="dropDown">
                             <div class="dropHeader">Search React</div>
                             <div class="dropContent">
-                                <Link to="/myPhotoR">My Photos (React)</Link>
+                                <Link to="/myPhotoR">My Photos (React)</Link> <br />
+                                <Link to="/myPhotoListR">My Photo Lists (React)</Link>
                             </div>
                         </div>
 
@@ -119,7 +125,9 @@
                     <Route path="/cars" component={() => <ConvertEle ele={CarsComingSoon()} />} />
                     <Route path="/myObj" component={() => <ConvertEle ele={MakeObj_CGF()} />} />
                     <Route path="/myPhoto" component={() => <ConvertEle ele={MakePhoto_CGF()} />} />
+                    <Route path="/myPhotoList" component={() => <ConvertEle ele={MakePhotoList_CGF()} />} />
                     <Route path="/myPhotoR" component={MakePhotoR_CGF} />
+                    <Route path="/myPhotoListR" component={MakePhotoListR_CGF} />
                     <Route path="/blog" component={Blog} />
                 </div>
 
