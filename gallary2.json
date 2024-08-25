@@ -1,0 +1,17 @@
+[
+    {
+        "pic": "pic/cityscape.jpg",
+        "caption": "City lights at night",
+        "hiddenInfo": "This photo was taken from a rooftop bar in New York City, capturing the bustling nightlife."
+    },
+    {
+        "pic": "pic/desert.jpg",
+        "caption": "Vast desert",
+        "hiddenInfo": "The expansive desert in Arizona during a road trip."
+    },
+    {
+        "pic": "pic/waterfall.jpg",
+        "caption": "Majestic waterfall",
+        "hiddenInfo": "A serene waterfall deep in the Amazon rainforest."
+    }
+]

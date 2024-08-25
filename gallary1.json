@@ -1,0 +1,17 @@
+[
+    {
+        "pic": "pic/sunset.jpg",
+        "caption": "Beautiful sunset over the mountains",
+        "hiddenInfo": "This photo was taken during a hiking trip in the Alps. The colors were stunning!"
+    },
+    {
+        "pic": "pic/forest.jpg",
+        "caption": "Dense forest",
+        "hiddenInfo": "This forest is located in the Pacific Northwest, known for its lush vegetation."
+    },
+    {
+        "pic": "pic/beach.jpg",
+        "caption": "Sunny day at the beach",
+        "hiddenInfo": "A peaceful day spent at a secluded beach in the Caribbean."
+    }
+]

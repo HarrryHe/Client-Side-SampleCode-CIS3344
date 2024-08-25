@@ -14,6 +14,7 @@
     <link href="style/blog.css" rel="stylesheet" type="text/css" />
     <link href="style/obj.css" rel="stylesheet" type="text/css" />
     <link href="style/photo.css" rel="stylesheet" type="text/css" />
+    <link href="style/slideShow.css" rel="stylesheet" type="text/css" />
 
 
     <!-- You need these two CDNs to use react, their version numbers must match -->
@@ -39,12 +40,15 @@
     <script src="_JS_reusable/MakeObj.js"></script>
     <script src="_JS_reusable/MakePhoto.js"></script>
     <script src="_JS_reusable/MakePhotoList.js"></script>
+    <script src="_JS_reusable/MakeSlideShow.js"></script>
+    <script src="_JS_reusable/ajax.js"></script>
 
     <!-- JS Content Generating functions (these are called by the router). -->
     <script src="_JS_CGF/CarsComingSoon.js"></script>
     <script src="_JS_CGF/MakeObj_CGF.js"></script>
     <script src="_JS_CGF/MakePhoto_CGF.js"></script>
     <script src="_JS_CGF/MakePhotoList_CGF.js"></script>
+    <script src="_JS_CGF/MakeSlideShow_CGF.js"></script>
 
     <!-- React reusable (these are called by CGFs). -->
     <script type="text/babel" src="_React_reusable/ConvertEle.js"></script>
@@ -101,6 +105,7 @@
                                 <Link to="/myObj">My Objects</Link> <br />
                                 <Link to="/myPhoto">My Photos</Link> <br />
                                 <Link to="/myPhotoList">My Photo Lists</Link> <br />
+                                <Link to="/mySlideShow">My Slide Shows</Link> <br />
                                 <a target="_blank" href="docs/DB_proposal.pdf">My DB PDF</a>
                             </div>  
                         </div>
@@ -128,6 +133,7 @@
                     <Route path="/myPhotoList" component={() => <ConvertEle ele={MakePhotoList_CGF()} />} />
                     <Route path="/myPhotoR" component={MakePhotoR_CGF} />
                     <Route path="/myPhotoListR" component={MakePhotoListR_CGF} />
+                    <Route path="/mySlideShow" component={() => <ConvertEle ele={MakeSlideShow_CGF()} />} />
                     <Route path="/blog" component={Blog} />
                 </div>
 
